@@ -1,10 +1,5 @@
-import ClassRoom from "./0-classroom.js";
+import ClassRoom from './0-classroom';
 
 export default function initializeRooms() {
-  const classrooms = [];
-  [19, 20, 34].forEach((item) => {
-    const newClass = new ClassRoom(item);
-    classrooms.push(newClass);
-  });
-  return classrooms;
+  return [new ClassRoom(19), new ClassRoom(20), new ClassRoom(34)];
 }
